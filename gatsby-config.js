@@ -1,15 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: "IFS-site",
+    description: "IFS Site code test for Nick Meincken",
   },
   plugins: [
     "gatsby-plugin-styled-components",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "",
-      },
-    },
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
