@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import { PrimaryButton, SecondaryButton } from "../../shared/ui-kit";
 import styled from "styled-components";
 
 const JumboBlock = styled.div`
@@ -8,7 +8,7 @@ const JumboBlock = styled.div`
   background-repeat: no-repeat;
   display: grid;
   grid-template-columns: 1fr minmax(auto, 117rem) 1fr;
-  grid-template-rows: 5rem 20rem 1fr;
+  grid-template-rows: 5rem 25rem 1fr;
   min-height: 83rem;
 
   h2 {
@@ -22,9 +22,10 @@ const JumboBlock = styled.div`
   .sub-block {
     grid-column: 2;
 
-    a {
-      color: green;
+    .btn-block {
       clear: left;
+      display: block;
+      margin-bottom: 10rem;
     }
   }
 
@@ -32,6 +33,7 @@ const JumboBlock = styled.div`
     background-color: #fff;
     float: left;
     padding: 2rem;
+    margin-bottom: 9rem;
   }
 
   > section {
@@ -58,12 +60,10 @@ const Jumbotron = () => {
       <h2>IFS Cloud Functionality</h2>
       <div className={`sub-block`}>
         <h3>Fully integrated. Flexibly deployable.</h3>
-        <Link to={`/`} className={`btn btn-primary`}>
-          Tristique eu urna eget
-        </Link>
-        <Link to={`/`} className={`btn btn-secondary`}>
-          Tristique eu urna eget
-        </Link>
+        <div className={`btn-block`}>
+          <PrimaryButton to={`/`} title={`Tristique eu urna eget`} />
+          <SecondaryButton to={`/`} title={`Tristique eu urna eget`} />
+        </div>
       </div>
       <section>
         <div>

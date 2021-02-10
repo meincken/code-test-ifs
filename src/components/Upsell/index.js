@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { CTAButton, H2 } from "../../shared/ui-kit";
 
 const UpsellBlock = styled.div`
   background: #f7f7f7;
@@ -16,15 +17,13 @@ const Upsell = () => {
   return (
     <UpsellBlock>
       <div>
-        <h2>Book a demo / Speak to us?</h2>
+        <H2 title={`Book a demo / Speak to us?`} />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae
           nulla in metus semper imperdiet vel eget odio. Phasellus ultricies
           justo nec…
         </p>
-        <a href="/" className="btn">
-          Dolor sit amert
-        </a>
+        <CTAButton to={`/`} title={`Dolor sit amert`} />
       </div>
     </UpsellBlock>
   );
